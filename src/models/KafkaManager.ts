@@ -8,7 +8,7 @@ class KafkaManager extends DBManager {
         super();
         this.connection = new Kafka({
             clientId: "my-app",
-            brokers: ["localhost:9093", "localhost:9094"]
+            brokers: ["127.0.0.1:9095", "127.0.0.1:9096", "127.0.0.1:9097"]
         });
     }
 

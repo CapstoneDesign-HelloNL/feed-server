@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 import LogService from "@src/utils/LogService";
 import DBManager from "@src/models/DBManager";
 
-class GroupDBManager extends DBManager {
+class FeedDBManager extends DBManager {
     constructor() {
         super();
         this.connection = new Sequelize(
@@ -45,4 +45,4 @@ class GroupDBManager extends DBManager {
     }
 }
 
-export default GroupDBManager;
+export default FeedDBManager;
